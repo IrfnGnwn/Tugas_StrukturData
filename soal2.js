@@ -1,18 +1,15 @@
-const arr = [1, 2, 2, 3, 3, 4, 5, 5];
-const frequency = {};
-const uniqueNumbers = [];
+const nilai = [1, 2, 2, 3, 3, 4, 5, 5];
 
-// Menghitung frekuensi setiap elemen
-arr.forEach(num => {
-    frequency[num] = (frequency[num] || 0) + 1;
-});
+const unique = nilai.reduce((acc, num) => {
+    acc[num] = (acc[num] || 0) + 1;
+    return acc;
+}, {});
 
-// Memasukkan angka yang hanya muncul sekali ke dalam array uniqueNumbers
-for (const [key, value] of Object.entries(frequency)) {
-    if (value === 1) {
-        uniqueNumbers.push(Number(key));
-    }
-}
+const ada = Object.keys(unique).filter(num => unique[num] === 1).map(Number);
 
-// Menampilkan hasil, jika uniqueNumbers kosong tampilkan []
-console.log(uniqueNumbers.length > 0 ? uniqueNumbers : []);
+const range = [...Array(6).keys()].slice(1); 
+
+const tidakada = range.filter(num => !unique[num]);
+
+console.log('Bilamana ada =', ada);
+console.log('Bilamana tidak ada =', tidakada);
