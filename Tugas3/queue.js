@@ -1,4 +1,3 @@
-// Implementasi Queue dalam JavaScript
 class Queue {
     constructor() {
       this.items = [];
@@ -38,9 +37,9 @@ class Queue {
   
   // Contoh penggunaan Queue
   const queue = new Queue();
-  queue.enqueue(10);
-  queue.enqueue(20);
-  queue.enqueue(30);
-  console.log("Queue: ", queue.printQueue()); // Output: Queue:  10 20 30
-  console.log("Dequeued: ", queue.dequeue()); // Output: Dequeued:  10
-  console.log("Front: ", queue.front()); // Output: Front:  20
+  queue.enqueue(100);
+  queue.enqueue(200);
+  queue.enqueue(300);
+  console.log("Queue: ", queue.printQueue()); 
+  console.log("Dequeued: ", queue.dequeue()); 
+  console.log("Front: ", queue.front());

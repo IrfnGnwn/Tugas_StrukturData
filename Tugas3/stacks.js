@@ -1,4 +1,3 @@
-// Implementasi Stack dalam JavaScript
 class Stack {
     constructor() {
       this.items = [];
@@ -38,10 +37,10 @@ class Stack {
   
   // Contoh penggunaan Stack
   const stack = new Stack();
-  stack.push(10);
-  stack.push(20);
-  stack.push(30);
-  console.log("Stack: ", stack.printStack()); // Output: Stack:  10 20 30
-  console.log("Popped: ", stack.pop()); // Output: Popped:  30
-  console.log("Top: ", stack.peek()); // Output: Top:  20
+  stack.push(100);
+  stack.push(200);
+  stack.push(300);
+  console.log("Stack: ", stack.printStack());
+  console.log("Popped: ", stack.pop()); 
+  console.log("Top: ", stack.peek());
   
