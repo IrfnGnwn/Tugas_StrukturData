@@ -27,7 +27,6 @@ function removeElements(head, val) {
     return head;
 }
 
-// Membangun double linked list: 1 <-> 2 <-> 3 <-> 2 <-> 4
 const head = new DoublyListNode(1);
 head.next = new DoublyListNode(2, head);
 head.next.next = new DoublyListNode(3, head.next);
